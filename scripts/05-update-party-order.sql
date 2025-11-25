@@ -1,0 +1,28 @@
+-- Update party display order (Dutch to English for sorting reference)
+UPDATE parties SET display_order = 1 WHERE abbreviation = 'D66';
+UPDATE parties SET display_order = 2 WHERE abbreviation = 'PVV';
+UPDATE parties SET display_order = 3 WHERE abbreviation = 'VVD';
+UPDATE parties SET display_order = 4 WHERE abbreviation = 'GL/PvdA';
+UPDATE parties SET display_order = 5 WHERE abbreviation = 'CDA';
+UPDATE parties SET display_order = 6 WHERE abbreviation = 'JA21';
+UPDATE parties SET display_order = 7 WHERE abbreviation = 'FvD';
+UPDATE parties SET display_order = 8 WHERE abbreviation = 'BBB';
+UPDATE parties SET display_order = 9 WHERE abbreviation = 'DENK';
+UPDATE parties SET display_order = 10 WHERE abbreviation = 'SGP';
+UPDATE parties SET display_order = 11 WHERE abbreviation = 'PvdD';
+UPDATE parties SET display_order = 12 WHERE abbreviation = 'CU';
+UPDATE parties SET display_order = 13 WHERE abbreviation = 'SP';
+UPDATE parties SET display_order = 14 WHERE abbreviation = '50PLUS';
+UPDATE parties SET display_order = 15 WHERE abbreviation = 'Volt';
+UPDATE parties SET display_order = 16 WHERE abbreviation = 'BIJ1';
+UPDATE parties SET display_order = 17 WHERE abbreviation = 'NSC';
+UPDATE parties SET display_order = 18 WHERE abbreviation = 'BVNL';
+UPDATE parties SET display_order = 19 WHERE abbreviation = 'VvD';
+UPDATE parties SET display_order = 20 WHERE abbreviation = 'Piraten';
+UPDATE parties SET display_order = 21 WHERE abbreviation = 'FNP';
+UPDATE parties SET display_order = 22 WHERE abbreviation = 'LP';
+UPDATE parties SET display_order = 23 WHERE abbreviation = 'DE LINIE';
+UPDATE parties SET display_order = 24 WHERE abbreviation = 'NL PLAN';
+UPDATE parties SET display_order = 25 WHERE abbreviation = 'VV';
+UPDATE parties SET display_order = 26 WHERE abbreviation = 'ELLECT';
+UPDATE parties SET display_order = 27 WHERE abbreviation = 'PvdR';

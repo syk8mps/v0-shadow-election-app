@@ -1,0 +1,51 @@
+-- Insert all 43 Volt candidates with their position numbers
+-- Replaces any existing Volt candidates with the official list
+
+-- First, remove any existing Volt candidates
+DELETE FROM candidates WHERE party_id = (SELECT id FROM parties WHERE abbreviation = 'Volt');
+
+-- Insert the official Volt candidate list
+INSERT INTO candidates (name, position, party_id) VALUES
+('Laurens Dassen', 1, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Marieke Koekkoek', 2, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Rens de Boer', 3, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Simone Ritzer', 4, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Bjorn Beijnon', 5, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Laura Harks', 6, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Jeroen Princen', 7, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Inge Vossen - van Beers', 8, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Emre Güngör', 9, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Anna Veltkamp', 10, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Erik Kemp', 11, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Monique Fikenscher', 12, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Roel Yska', 13, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Mette Blom', 14, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Geert van der Veer', 15, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Anne van den Ende', 16, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Michael Tai', 17, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Karin Nielsen', 18, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Jesse van Mulkom', 19, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Jefte Erens', 20, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Wiebe van den Ende', 21, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Jolijn van der Linden', 22, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Matthijs Nieuwenhuis', 23, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Nova Rasenberg', 24, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Tim Areago', 25, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Annemieke van der Linden', 26, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Leslie Scherbeijn', 27, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Laura van Strien', 28, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Tom van Doesburg', 29, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Marion van Kampen', 30, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Sjoerd Wennekes', 31, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Lore Eckelmans', 32, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Christiaan Meinsma', 33, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Julia Hamel', 34, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Daan Stokvis', 35, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Tris Westerman', 36, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Quinten Buijs', 37, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Irisvan der Veldt', 38, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Mark Croes', 39, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Vivienne van der Veen', 40, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Giovanni Hagen', 41, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Adda van Engelen', 42, (SELECT id FROM parties WHERE abbreviation = 'Volt')),
+('Bart Klijnsma', 43, (SELECT id FROM parties WHERE abbreviation = 'Volt'));
